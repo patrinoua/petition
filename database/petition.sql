@@ -1,10 +1,3 @@
-DROP TABLE IF EXISTS signatures;
-
-CREATE TABLE signatures(
-    id SERIAL PRIMARY KEY,
-    signature TEXT NOT NULL,
-    user_id INTEGER REFERENCES users(id)
-);
 
 DROP TABLE IF EXISTS users CASCADE;
 
@@ -16,6 +9,15 @@ CREATE TABLE users(
     pass VARCHAR(250) NOT NULL
     -- the hashed password.....
 );
+
+DROP TABLE IF EXISTS signatures;
+
+CREATE TABLE signatures(
+    id SERIAL PRIMARY KEY,
+    signature TEXT NOT NULL,
+    user_id INTEGER REFERENCES users(id)
+);
+
 
 DROP TABLE IF EXISTS user_profiles;
 
