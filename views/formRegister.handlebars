@@ -1,0 +1,21 @@
+<div class="largeTexts">
+    <h1> Register </h1>
+</div>
+
+<div class="formDiv">
+    <form method="POST" id="register" class="form">
+        <div class="error"> {{err}} </div>
+
+        <input name="first" placeholder="First name" value="{{first}}">
+        <input name="last" placeholder="Last name" value="{{last}}">
+        <input id="email" name="email" placeholder="Email" value="{{email}}">
+        <input id="password" name="password" type="password" placeholder="******">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <!-- <input type="submit" value="Submit" class="button"> -->
+        <div class="buttonsInARow">
+            <button type="submit" class="button"> Submit</button>
+            <!-- <a href="/login" class="button"> Login </a> -->
+        </div>
+
+    </form>
+</div>

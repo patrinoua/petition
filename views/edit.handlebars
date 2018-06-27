@@ -1,0 +1,22 @@
+
+<div class="largeTexts">
+    <h1>Edit Profile</h1>
+</div>
+<form method="POST" class="form">
+    <!-- <ul class="form"> -->
+        <div class="error"> {{err}} </div>
+
+        <input name="first" placeholder="First name" value="{{first}}">
+        <input name="last" placeholder="Last name" value="{{last}}">
+        <input name="email" placeholder="email" value="{{email}}">
+        <input name="pass" placeholder="******">
+        <input name="age" placeholder="age" value="{{age}}">
+        <input name="city" placeholder="city" value="{{city}}">
+        <inpu name="url" placeholder="url" value="{{url}}">
+
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <div class="buttonsInARow">
+        <button type="submit" class="button"> Submit</button>
+        </div>
+    <!-- </ul> -->
+</form>

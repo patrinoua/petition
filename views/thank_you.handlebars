@@ -1,0 +1,15 @@
+<div class="largeTexts">
+    <h1>thank you !</h1>
+</div>
+<img src="{{sig}}" id="signatureImg">
+
+<div class = "buttonsInARow">
+    <form method="POST" id="deleteSig">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <div class="buttonsInARow">
+            <button type="submit" class="button"> Delete sig</button>
+            <a href="/signers" class="button"> Signers </a>
+        </div>
+    </form>
+
+</div>

@@ -1,0 +1,14 @@
+
+<div class="largeTexts">
+    <h1>Profile</h1>
+</div>
+<form method="POST" class="form">
+
+    <div class="error"> {{err}} </div>
+    <input id="age" name="age" placeholder="age">
+    <input id="city" name="city" placeholder="city">
+    <input id="url" name="url" placeholder="url">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button type="submit" class="button"> Submit</button>
+
+</form>

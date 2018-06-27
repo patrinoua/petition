@@ -1,0 +1,222 @@
+*{
+    font-family:'Work Sans', sans-serif;
+    font-weight: 900;
+
+}
+body{background-color:#00021A;}
+#signatureImg{
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow:  5px 5px 60px black;
+}
+
+#navigation a{
+    font-size: 16px;
+    font-family: 'Cutive Mono', monospace;
+    text-decoration: none;
+}
+
+input{
+    display: block;
+    padding:8px;
+    border-radius: 2px;
+    font-size:14px;
+    justify-self:center;
+    justify-content: center;
+    margin: 5px;
+    font-family: 'Cutive Mono', monospace;
+}
+.error{
+    color:red;
+    padding: 4px;
+    border-radius: 3px;
+    font-family: 'Cutive Mono', monospace;
+}
+h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 3em;
+    text-shadow: 1px 1px 4px black;
+    color: white;
+    margin: 10px;
+    justify-self: center;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border-radius: 5%;
+}
+
+#boxGrid{
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    width: 80vw;
+}
+
+.bigPic{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 600px;
+    background-image: url("rain.jpg");
+    background-size: auto 100%;
+    background-repeat: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    justify-items:center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow:  1px 1px 6px black;
+}
+
+.largeTexts{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    align-items: center;
+    font-size: 0.7em;
+}
+
+.sunPic{
+    align-self: center;
+    box-shadow: -4px -4px 50px rgba(0,0,0,0.4);
+    height:240px;
+    width:240px;
+    margin:20px;
+    border: 0px solid black;
+    border-radius: 50%;
+    /* padding: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.theSunPic{
+    overflow: hidden;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-image: url("sun.jpg");
+}
+#myCanvas{
+    background-image: url("sun.jpg");
+    border-radius: 50%;
+    border:1px solid #ffffff;
+}
+.boxText{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.formDiv{
+     background-repeat: cover;
+    justify-content: center;
+    justify-items:center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius:10%;
+    box-shadow:  5px 5px 30px black;
+    font-family: 'Cutive Mono', monospace;
+    background-color: rgba(205,205,205,0.3);
+
+}
+.form input{
+    display: block;
+    padding:8px;
+    border-radius: 2px;
+    font-size:14px;
+    justify-self:center;
+    justify-content: center;
+    margin: 5px;
+}
+
+#inputArea{
+    color: black;
+    padding: 40px;
+}
+#inputArea h3{
+    color: black;
+    /* padding: 40px; */
+}
+.signers{
+    overflow: scroll;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    margin: 150px 0px;
+    border-radius: 3px;
+    font-size:20px;
+    align-items: center;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow:  -5px -5px 15px -5px black INSET;
+
+}
+
+.signers li{
+    font-family: 'Indie Flower', cursive;
+    list-style-type:none;
+    text-shadow: 1px 1px 5px 5px black;
+}
+#footer{
+    align-self: flex-end;
+    padding-right:20px;
+}
+#submit{
+    justify-content: center;
+}
+::placeholder{
+    color: lightgrey;
+    font-family: 'Cutive Mono', monospace;
+}
+.buttonsInARow{
+    padding: 15px;
+    display: flex;
+}
+.buttonsInARow .button{
+    margin: 10px;
+}
+
+.button{
+    font-family: 'Cutive Mono', monospace;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width:120px;
+
+    text-shadow: none;
+    background-color: #B6DBBE;
+    font-size: 15px;
+    /* background-color:#eeeeee; */
+    box-shadow: 1px 1px 4px black;
+    /* margin: 5px; */
+    /* padding: 6px 12px; */
+    border-radius: 25px;
+    color: #012563;
+}
+.button:hover{
+    color:white;
+    transform:translateY(1px);
+}
+a{
+    text-decoration:none;
+    color: white;
+}

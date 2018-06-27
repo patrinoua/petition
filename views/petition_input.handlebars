@@ -1,0 +1,19 @@
+<div class="largeTexts">
+    <h1> Sign here </h1>
+</div>
+
+<div class="formDiv">
+
+    <form method="POST" class="form">
+        <div class="error"> {{err}} </div>
+        <input id="signature" name="sig" placeholder="sig" type="hidden">
+        <div class="sunPic">
+            <canvas id="myCanvas" width="240" height="240"></canvas>
+        </div>
+
+        <button type="submit" class="button"> Submit</button>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="sign_script.js"> </script>
+    </form>
+</div>
