@@ -1,4 +1,4 @@
-var bcrypt = require('bcrypt');
+var bcrypt = require('bcryptjs');
 
 var spicedPg = require('../node_modules/spiced-pg');
 
